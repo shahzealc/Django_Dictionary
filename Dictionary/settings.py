@@ -15,6 +15,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -25,12 +26,13 @@ SECRET_KEY = 'django-insecure-@a7vz8d3jr3*ewm+6_cs#iocyexn^ti45@*=%v=j2-&g_$l&3v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1',]
+ALLOWED_HOSTS = ['127.0.0.1','dictionaary.herokuapp.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    # 'gTTS',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
