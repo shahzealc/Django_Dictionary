@@ -30,7 +30,8 @@
     <style>
       * {
         padding: 0;
-        margin: 0;
+        margin-left: 5px;
+        margin-right: 5px;
         color: #1a1f36;
         box-sizing: border-box;
         word-wrap: break-word;
@@ -226,42 +227,15 @@
         margin: 0 10px;
       }
 
-      /* .animationRightLeft {
-        animation: animationRightLeft 2s ease-in-out;
-      }
-      .animationLeftRight {
-        animation: animationLeftRight 2s ease-in-out;
-      }
-      .tans3s {
-        animation: animationLeftRight 3s ease-in-out;
-      }
-      .tans4s {
-        animation: animationLeftRight 4s ease-in-out;
-      } */
-      /* 
-      @keyframes animationLeftRight {
-        0% {
-          transform: translateX(0px);
+      @media only screen and (max-width: 500px) {
+        .padding-horizontal--48{
+          padding-left:15px;
+          padding-right:15px;
         }
-        50% {
-          transform: translateX(1000px);
-        }
-        100% {
-          transform: translateX(0px);
+        #title{
+          font-size:30px;
         }
       }
-
-      @keyframes animationRightLeft {
-        0% {
-          transform: translateX(0px);
-        }
-        50% {
-          transform: translateX(-1000px);
-        }
-        100% {
-          transform: translateX(0px);
-        }
-      } */
     </style>
   </head>
 
@@ -366,7 +340,7 @@
             class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center"
           >
             <h1>
-              <a href="./" rel="dofollow">Django-Dictionary</a>              
+              <a href="./" rel="dofollow" id="title">Django-Dictionary</a>              
             </h1>
           </div>
           

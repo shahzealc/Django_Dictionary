@@ -53,7 +53,8 @@
     <style>
       * {
         padding: 0;
-        margin: 0;
+        margin-left: 5px;
+        margin-right: 5px;
         color: #1a1f36;
         box-sizing: border-box;
         word-wrap: break-word;
@@ -248,6 +249,18 @@
         font-weight: 600;
         margin: 0 10px;
       }
+      @media only screen and (max-width: 500px) {
+        .padding-horizontal--48{
+          padding-left:15px;
+          padding-right:15px;
+        }
+        #title{
+          font-size:30px;
+        }
+        .searched_word{
+          font-size: 25px;
+        }
+      }
     </style>
   </head>
 
@@ -352,13 +365,13 @@
             class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center"
           >
             <h1>
-              <a href="./" rel="dofollow">Django-Dictionary</a>
+              <a href="./" rel="dofollow" id="title">Django-Dictionary</a>
             </h1>
           </div>
           <div class="formbg-outer">
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
-                <span class="padding-bottom--15"><h2 align="center" style="text-decoration:underline;padding-bottom: 20px;"> {{ results.word | title }} </h2></span>
+                <span class="padding-bottom--15"><h2 align="center" class="searched_word" style="text-decoration:underline;padding-bottom: 20px;"> {{ results.word | title }} </h2></span>
                 
                 {% if results.meaning %}
                 
