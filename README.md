@@ -33,14 +33,20 @@ Follow these instructions to get a copy of the Django Dictionary project up and 
 
 2. Navigate to the project directory:
 
+    ```shell
     cd django-dictionary
     
 3. Install the required dependencies:
-
+    
+    ```shell
     pip install -r requirements.txt
 
 4. Run the application:
 
+    ```shell
     python manage.py runserver
 
-5. Open your web browser and visit http://localhost:8000 to access the Django Dictionary.
+5. Open your web browser and visit:
+   
+   ```shell
+   http://localhost:8000 
