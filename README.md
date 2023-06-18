@@ -29,7 +29,7 @@ Follow these instructions to get a copy of the Django Dictionary project up and 
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-username/django-dictionary.git
+   git clone https://github.com/shahzealc/Django_Dictionary.git
 
 2. Navigate to the project directory:
 
